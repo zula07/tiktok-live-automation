@@ -5,9 +5,6 @@ $input = file_get_contents('php://input');
 $data = json_decode($input, true);
 
 if (isset($data['message'])) {
-    $chatId = $data['message']['chat']['id'];
-    $text = $data['message']['text'];
-
     ignore_user_abort(true);
     set_time_limit(0);
     ob_start();
@@ -16,7 +13,5 @@ if (isset($data['message'])) {
     header('Content-Length: '.ob_get_length());
     ob_end_flush();
     flush();
-
-    file_put_contents('/root/.openclaw/workspace/scripts/inbox.json', json_encode(['chatId' => $chatId, 'text' => $text, 'time' => time()]) . "\n", FILE_APPEND);
 }
 ?>
