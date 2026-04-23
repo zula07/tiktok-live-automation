@@ -13,4 +13,4 @@ TikTok canlı yayın etkileşimlerini analiz etmek, sandık ve hediye gibi bildi
 - Sadece eğitim amaçlıdır; kullanım şartlarına uygun hareket edilmelidir.
 
 ---
-*Geliştirici: Mustafa & Bebiş*
+*Geliştirici: Mustafa*
